@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>XmlHttpRequest Example</title>
+    <script src="jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<button onclick="loadRepos()">Load Repos</button>
+<div id="res"></div>
+<script>
+    function loadRepos(){
+        let req = new XMLHttpRequest();
+        req.onreadystatechange = function(){
+            if(req.readyState === 4){
+                let result = document.getElementById('res');
+                let repos = JSON.parse(req.responseText);
+                result.innerHTML = '<ul>';
+                for(let repo of repos){
+                    result.innerHTML += `<li><a href=${repo.svn_url} target="_blank">${repo.name}</a></li>`;
+                }
+                result.inneHTML += '</ul>';
+            }
+        };
+
+        req.open("GET", "https://api.github.com/users/dackmusic/repos", true);
+        req.send();
+    }
+</script>
+</body>
+</html>

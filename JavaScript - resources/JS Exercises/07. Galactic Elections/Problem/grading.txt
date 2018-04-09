@@ -1,0 +1,8 @@
+12% - two candidates in their own systems
+25% - two candidates in their own systems
+37% - two candidates in single system (recalc) + ordering
+50% - multiple ballots for the same candidate in the same system (recalc) + tricky half
+62% - candidate with fewer votes within systems wins the overall election + multiple ballots
+75% - runoff + multiple ballots
+87% - mixed ordering + multiple ballots
+100% - candidate with minority within systems wins unopposed + multiple ballots

@@ -1,0 +1,10 @@
+10% - to-from order, single line
+20% - to-from order, extra attribute at end
+30% - to-from order, extra attribute spliced in, space in name
+40% - to-from order, multi line
+50% - from-to order, single line
+60% - from-to order, extra attribute at start
+70% - from-to order, multi line, space in attribute
+80% - from-to order, invalid attribute
+90% - extra data
+100% - garbled up tag
